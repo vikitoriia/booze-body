@@ -1,0 +1,54 @@
+.ba-section-about{
+   background: #FAFAFA;
+	padding: 100px 0 0 0;
+	
+		@media screen and (max-width:640px){
+			padding-top: 0;
+		}
+
+   .ba-information{
+      margin: auto 0;
+		max-width: 328px;
+		
+		@include breakpoint(large){
+			margin-left: 82px;
+		}
+   }
+
+   .ba-title{
+		font-weight: 500;
+		font-size: 20px;
+		letter-spacing: 0.15px;
+		color: #190078;
+		margin-bottom: 30px;
+		
+		@include breakpoint(large){
+			font-weight: normal;
+			margin-bottom: 45px;	
+			font-size: 24px;	
+		}
+   }
+
+   .ba-about-list{   
+      list-style: none;
+      li{
+         position: relative;
+         margin-left: 20px; 
+         letter-spacing: 0.25px;
+         
+         &::before{
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: -40px;
+            background: url(../img/list-style.svg) no-repeat 50%;
+            z-index: 3;
+         }
+      }
+
+      li+li{
+         margin-top: 22px;
+      }
+   }
+}

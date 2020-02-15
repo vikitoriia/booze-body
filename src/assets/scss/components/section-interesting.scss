@@ -1,0 +1,80 @@
+.ba-section-interesting{
+	background: #E5E5E5;
+	padding: 0 0 54px;
+
+	@include breakpoint(large){
+		padding: 0 0 105px;
+	}
+
+	.ba-title{
+		font-weight: 500;
+		font-size: 20px;
+		letter-spacing: 0.15px;
+		color: #190078;
+		margin-bottom: 10px;
+
+		@include breakpoint(large){
+			margin-bottom: 56px;
+		}
+	}
+
+	.ba-person-name{
+		font-weight: 500;
+		font-size: 20px;
+		letter-spacing: 0.15px;
+		color: #190078;
+	}
+
+	.ba-card-info{
+		margin-bottom: 10px;
+	}
+
+	.ba-person-list-info{
+			
+
+		@include breakpoint(large){
+			height: 150px;
+		}
+		ul{
+			margin: 0;
+
+			li{
+				list-style: none;
+				display: flex;
+				flex-direction: row;
+			}
+
+			li + li{
+				margin-top: 4px;
+
+				@include breakpoint(large){
+					margin-top: 20px;	
+				}
+			}
+
+			.ba-value{
+				min-width: 90px;
+				height: 48px;
+
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: 0.15px;
+				color: #190078;
+
+				&--challenge{
+					color: #01A39D;
+				}
+			}
+
+			.ba-answer{
+				width: 100px;
+
+				font-weight: normal;
+				font-size: 16px;
+				letter-spacing: 0.25px;
+				color: #101010;
+			}
+		}
+		
+	}
+}

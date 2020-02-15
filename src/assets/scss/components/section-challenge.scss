@@ -1,0 +1,28 @@
+.ba-section-challenge{
+	background: #E5E5E5;
+	padding: 0;
+
+	.ba-title{
+		font-weight: 500;
+		font-size: 20px;
+		letter-spacing: 0.15px;
+		color: #190078;
+	}
+
+	.ba-challenge{
+		padding: 0 15px 0 15px;
+		display: flex;
+		text-align: center;
+		
+		div + div {
+			margin-left: 80px;
+		}
+
+		.ba-challenge-title{
+			font-weight: 500;
+			font-size: 14px;
+			color: #190078;
+			margin-top: 25px;
+		}
+	}
+}

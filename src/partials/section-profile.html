@@ -1,0 +1,60 @@
+<section class="ba-section-profile">
+	<div class="row">
+		<div class="column large-4">
+			<img class="ba-section-profile-img" :src="card.img" alt="{{name}}">
+		</div>
+		<div class="column large-7">
+			<div class="ba-card-info">
+				<span class="ba-person-name">{{card.name}}</span>
+				<span class="ba-data">{{card.date}}</span>
+			</div>
+			<div class="ba-reason">
+				{{card.reason}}
+			</div>
+			<div class="ba-profile-list-info">
+				<ul class="ba-list--2col">
+					<li>
+						<span class="ba-value">О встрече:</span>
+						<span class="ba-answer">{{card.info}}</span>
+					</li>
+					<li>
+						<span class="ba-value">Заведение:</span>
+						<span class="ba-answer">{{card.place}}</span>
+					</li>
+					<li>
+						<span class="ba-value">Компания:</span>
+						<span class="ba-answer">{{card.company}}</span>
+					</li>
+					<li>
+						<span class="ba-value">Повод:</span>
+						<span class="ba-answer">{{card.reason}}</span>
+					</li>
+					<li>
+						<span class="ba-value">Напиток:</span>
+						<span class="ba-answer">{{card.drink}}</span>
+					</li>
+					<li>
+						<span class="ba-value">Собрано:</span>
+						<span class="ba-answer">{{cards.people}}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="column large-1">
+			<div class="div">Рейтинг</div>
+			<div class="ba-rating">{{card.rating}}</div>
+		</div>
+		<div class="column large-6 large-offset-4">
+			<div class="ba-contact">
+				<div class="ba-button-follow large-offset-4">
+					<button class="ba-button ">
+						Присоединиться
+					</button>
+				</div>
+				<div class="ba-send-message">
+					Есть вопросы? Отправьте Андрею сообщение в Telegram или Viber 
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

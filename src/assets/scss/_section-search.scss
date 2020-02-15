@@ -1,0 +1,76 @@
+.section-search {
+	background: #FAFAFA url(../img/beer.jpg) no-repeat 50%;
+	background-size: cover;
+	padding: 33px 0; 
+	@media screen and (max-width:640px){
+		padding: 0;
+		background: #FAFAFA;
+	}
+
+}
+
+.ba-search {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	@media screen and (max-width:640px){
+			padding: 40px 0;
+	}
+	
+	form {
+		background: #FAFAFA;
+		padding: 8px 16px 18px;
+		margin-bottom: 30px;
+		color: $primary-color;
+
+		@media screen and (max-width:640px){
+			margin-bottom: 0px;
+		}
+		label {
+			color: $primary-color;
+			margin-left: 16px;
+		}
+		select {
+			border: none;
+			border-bottom: 2px solid $primary-color;
+			padding-left: 16px;
+			background: #FAFAFA;
+
+			option {
+				color: $primary-color;
+			}
+		}
+
+		input {
+			border: none;
+			border-bottom: 2px solid $primary-color;
+			padding-left: 16px;
+			background: #FAFAFA;
+
+
+		}
+
+	}
+
+	.ba-challenge {
+		display: flex;
+		justify-content: center;
+
+		&__type {
+			width: 33%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p {
+				text-align: center;
+			}
+			
+		}
+	}
+	
+	&__title {
+		max-width: 300px;
+		font-size: 24px;
+		color: $primary-color;
+	}
+}

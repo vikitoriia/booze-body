@@ -1,0 +1,74 @@
+<section class="section-search" id="section-search">
+	<div class="row">
+		<div class="column large-6 small-12">
+			<div class="ba-search">
+				<h3 class="ba-search__title">
+					Начните поиск компании и события прямо сейчас
+				</h3>
+				
+				<form action="#" method="POST">
+					<label for="city">Город</label>
+					<select id="city">
+						<option value="Киев">Киев</option>
+						<option value="Полтава">Полтава</option>
+						<option value="Харьков">Харьков</option>
+						<option value="Львов">Львов</option>
+						<option value="Где" selected hidden>Где</option>
+					</select>
+
+					<label for="date">Дата</label>
+					<input type="date" id="date" name="start" value="Когда">
+
+					<label for="drink">Что пить</label>
+					<select id="drink">
+						<option value="Водка">Водка</option>
+						<option value="Ром">Ром</option>
+						<option value="Виски">Виски</option>
+						<option value="Вино">Вино</option>
+						<option value="Текила">Текила</option>
+						<option value="Пиво">Пиво</option>
+						<option value="Настойки">Настойки</option>
+						<option value="Коктейли">Коктейли</option>
+						<option value="Другое">Другое</option>
+						<option value="Вид алкоголя" selected hidden>Вид алкоголя</option>
+					</select>
+
+					<label for="amount">Количество людей</label>
+					<select id="amount">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="Больше 5">Больше 5</option>
+						<option value="Сколько людей хочу найти" selected hidden>Сколько людей хочу найти</option>
+					</select>
+
+					<label for="challenge"><input type="checkbox" name="challenge" id="challenge" checked>Участвовать в
+						челендже</label>
+
+					<div class="ba-challenge">
+						<div class="ba-challenge__type">
+							<img src="assets/img/party.jpg" alt="Вечеринка в костюмах">
+							<p>Вечеринка в костюмах</p>
+						</div>
+						<div class="ba-challenge__type">
+							<img src="assets/img/golden-mile.jpg" alt="Пройти золотую милю">
+							<p>Пройти золотую милю</p>
+						</div>
+						<div class="ba-challenge__type">
+							<img src="assets/img/last-hero.jpg" alt="Последний герой">
+							<p>Последний герой</p>
+						</div>
+					</div>
+
+				</form>
+				<button type="submit" href="search.html" class="ba-button ba-button--lighter">
+					Искать
+				</button>
+			</div>
+		</div>
+		<!-- /.column -->
+	</div>
+	<!-- /.row -->
+</section>

@@ -1,0 +1,53 @@
+.ba-button {
+	display: inline-block;
+	background: $primary-color;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 8px;
+	padding: 0 16px;
+	min-height: 42px;
+	line-height: 42px;
+	margin-right: 71px;
+	font-weight: 500;
+	font-family: $body-font-family;
+	@media screen and (max-width:640px){
+			margin: 0 auto;
+	}
+
+	&:hover {
+		box-shadow: 2px 2px 4px $primary-color;
+		background: #fff;
+	}
+
+	&--lighter {
+		background: #4B01D1;
+		&:hover {
+			color: #4B01D1
+		}
+	}
+}
+html {
+	scroll-behavior: smooth;
+}
+a, button{
+    transition: .3s ease-in;
+    transition-property: color, background-color, opacity;
+    svg{
+        fill:currentColor;
+    }
+}
+button, .button{
+    cursor: pointer;
+}
+.ba-list {
+	padding: 0;
+	list-style: none;
+	margin: 0 0 20px;
+	&--2col {
+		@include breakpoint(medium){
+			column-count: 2;
+			column-gap: 30px;
+			
+		}
+	}
+}

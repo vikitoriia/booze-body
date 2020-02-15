@@ -1,0 +1,26 @@
+.ba-section-contact{
+	padding: 85px 0 44px;
+	background: #E5E5E5;
+
+	@include breakpoint(large){
+		padding: 85px 0 44px;
+	}
+
+	.ba-title{
+		font-weight: 500;
+		font-size: 18px;
+		letter-spacing: 0.15px;
+		color: #190078;
+		margin-bottom: 20px;
+
+		@include breakpoint(large){
+			font-size: 16px;
+			margin-bottom: 50px;
+		}
+	}
+
+	.ba-button-mesage{
+		display: flex;
+		margin: 0 auto; 
+	}
+}

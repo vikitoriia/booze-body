@@ -1,0 +1,87 @@
+.ba-section-proffer{
+   background: #FAFAFA;
+   padding: 40px 0 50px;
+
+   @include breakpoint(large){
+      padding: 100px 0 72px;  
+   }
+
+   .ba-title{
+      text-align: left;
+      margin-bottom: 11px;
+      font-weight: 500;
+      letter-spacing: 0.15px;
+      font-size: 20px;
+      color: #190078;
+
+
+      @include breakpoint(large){
+         text-align: center;
+         color: #190078;
+         font-size: 24px;
+         margin-bottom: 30px; 
+      }
+
+      @include breakpoint(medium){
+         text-align: center;
+      }
+   }
+
+   .ba-members{
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      align-items: center;
+
+      img{
+			margin-bottom: 15px;
+			
+			@media screen and (max-width:640px){
+				width: 58px;
+				height: 58px;
+			}
+      }
+   }
+
+   .ba-person-name{
+      font-weight: normal;
+      font-size: 16px;
+      color: #190078;
+      letter-spacing: 0.15px;
+      margin-bottom: 5px;
+
+      @include breakpoint(large){
+         font-weight: 500;
+         font-size: 20px;
+         color: #190078;
+         letter-spacing: 0.15px;
+         margin-bottom: 0px;
+      }
+   }
+
+   .ba-rating{
+      margin-bottom: -1px;
+   }
+
+   .ba-interests{
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.15px;
+      margin-bottom: 3px;
+	}
+	
+	.ba-member{
+
+		@include breakpoint(large){
+			width: 212px;
+			border: 1px solid #FAFAFA;
+			padding-top: 10px;
+
+			&:hover{
+				margin: 0;
+				border: 1px solid #190078;
+				box-shadow: 0 0 20px rgba(0,0,0,0.3);
+		}
+		}
+	}
+}

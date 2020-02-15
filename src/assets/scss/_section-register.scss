@@ -1,0 +1,26 @@
+.section-register {
+	background: #fafafa url(../img/people.jpg) no-repeat 50%;
+	background-size: cover;
+	margin-bottom: 100px;
+	@media screen and (max-width:640px){
+		background: #fafafa url(../img/mobile-people.jpg) no-repeat 50% 0%;
+		background-size: cover;
+		margin-bottom: 0;
+	}
+}
+.ba-register {
+	padding: 170px 0 209px;
+	@media screen and (max-width:640px){
+		padding: 32px 0;
+	}
+	&__title {
+		max-width: 360px;
+		font-size: 34px;
+		color: $primary-color;
+		@media screen and (max-width:640px){
+			color: #fff;	
+			text-align: center;
+			max-width: 100%;
+		}
+	}
+}
